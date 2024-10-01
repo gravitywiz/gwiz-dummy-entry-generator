@@ -28,7 +28,14 @@ add_action( 'init', function() {
 		'additional_inputs' => '<p><label>Number of Entries</label><input type="number" placeholder="Number of entries to generate" value="50" name="number_of_entries" /></p>',
 		'create_admin_page' => true,
 		'get_items'    => function ( $size, $offset ) use ( $gwiz_faker ) {
-			$total = $_POST['number_of_entries'];
+			$total = rgpost( 'number_of_entries' );
+
+			// Cheap way to get around the 'number_of_entries' not being passed in subsequent requests.
+			if ( ! empty( $total ) ) {
+				set_transient( 'gwiz_dummy_entry_generator_total', $total, HOUR_IN_SECONDS );
+			} else {
+				$total = get_transient( 'gwiz_dummy_entry_generator_total' );
+			}
 
 			$paging  = array(
 				'offset'    => $offset,
