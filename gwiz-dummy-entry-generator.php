@@ -51,7 +51,11 @@ add_action( 'init', function() {
 		},
 		'process_item' => function ( $entry ) {
 			// Insert the entry here.
-			GFAPI::add_entry( $entry );
+			$entry_id = GFAPI::add_entry( $entry );
+
+			if ( is_wp_error( $entry_id ) ) {
+				return;
+			}
 
 			// Add entry meta here so we can delete the entries later.
 			gform_add_meta( $entry['id'], 'gwiz_dummy_entry', true );
