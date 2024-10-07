@@ -1,14 +1,8 @@
 {
     "require": {
-        "gravitywiz/gwiz-batcher": "^1.2",
+        "gravitywiz/batcher": "^1.0",
         "automattic/jetpack-autoloader": "^3.1",
-        "gravitywiz/gwiz-faker": "^1.2"
-    },
-    "repositories": {
-        "gravitywiz": {
-            "type": "composer",
-            "url": "https://composer.ongwiz.com"
-        }
+        "gravitywiz/faker": "^1.0"
     },
     "config": {
         "allow-plugins": {
