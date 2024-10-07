@@ -8,7 +8,7 @@
  * Author URI:   http://gravitywiz.com
  */
 
-define( 'GWIZ_DUMMY_ENTRY_GENERATOR', '1.0-beta-1' );
+define( 'GWIZ_DUMMY_ENTRY_GENERATOR_VERSION', '1.0-beta-1.1' );
 
 add_action( 'init', function() {
 	if ( ! is_admin() && ! ( defined( 'DOING_AJAX' ) && DOING_AJAX ) ) {
