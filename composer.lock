@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8d1d939b8a531bc61c6155f7ad342857",
+    "content-hash": "9c34db43cb5971fd4389f366d8361687",
     "packages": [
         {
             "name": "automattic/jetpack-autoloader",
@@ -72,20 +72,20 @@
         },
         {
             "name": "fakerphp/faker",
-            "version": "v1.23.1",
+            "version": "v1.20.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FakerPHP/Faker.git",
-                "reference": "bfb4fe148adbf78eff521199619b93a52ae3554b"
+                "reference": "37f751c67a5372d4e26353bd9384bc03744ec77b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FakerPHP/Faker/zipball/bfb4fe148adbf78eff521199619b93a52ae3554b",
-                "reference": "bfb4fe148adbf78eff521199619b93a52ae3554b",
+                "url": "https://api.github.com/repos/FakerPHP/Faker/zipball/37f751c67a5372d4e26353bd9384bc03744ec77b",
+                "reference": "37f751c67a5372d4e26353bd9384bc03744ec77b",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.4 || ^8.0",
+                "php": "^7.1 || ^8.0",
                 "psr/container": "^1.0 || ^2.0",
                 "symfony/deprecation-contracts": "^2.2 || ^3.0"
             },
@@ -96,8 +96,7 @@
                 "bamarni/composer-bin-plugin": "^1.4.1",
                 "doctrine/persistence": "^1.3 || ^2.0",
                 "ext-intl": "*",
-                "phpunit/phpunit": "^9.5.26",
-                "symfony/phpunit-bridge": "^5.4.16"
+                "symfony/phpunit-bridge": "^4.4 || ^5.2"
             },
             "suggest": {
                 "doctrine/orm": "Required to use Faker\\ORM\\Doctrine",
@@ -107,6 +106,11 @@
                 "ext-mbstring": "Required for multibyte Unicode string functionality."
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "v1.20-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Faker\\": "src/Faker/"
@@ -129,17 +133,23 @@
             ],
             "support": {
                 "issues": "https://github.com/FakerPHP/Faker/issues",
-                "source": "https://github.com/FakerPHP/Faker/tree/v1.23.1"
+                "source": "https://github.com/FakerPHP/Faker/tree/v1.20.0"
             },
-            "time": "2024-01-02T13:46:09+00:00"
+            "time": "2022-07-20T13:12:54+00:00"
         },
         {
             "name": "gravitywiz/gwiz-batcher",
-            "version": "1.2.2",
+            "version": "1.3.1",
             "dist": {
                 "type": "zip",
-                "url": "https://composer.ongwiz.com/zipball/gravitywiz/gwiz-batcher/11014e392acd2b1c4f41c5fd901366f54bcddd0e.zip",
-                "reference": "11014e392acd2b1c4f41c5fd901366f54bcddd0e"
+                "url": "https://composer.ongwiz.com/zipball/gravitywiz/gwiz-batcher/e04d2c6b283d1991fafe52bf70426a074f98e8a7.zip",
+                "reference": "e04d2c6b283d1991fafe52bf70426a074f98e8a7",
+                "mirrors": [
+                    {
+                        "url": "https://composer.ongwiz.com/zipball/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "type": "library",
             "autoload": {
@@ -152,18 +162,24 @@
                 "GPL-2.0-or-later"
             ],
             "description": "A class for bulk processing items in batches. Useful for migration routines, updating entries, generating content, and more.",
-            "time": "2024-09-27T20:40:31+00:00"
+            "time": "2024-10-07T16:21:02+00:00"
         },
         {
             "name": "gravitywiz/gwiz-faker",
-            "version": "1.2.2",
+            "version": "1.3.1",
             "dist": {
                 "type": "zip",
-                "url": "https://composer.ongwiz.com/zipball/gravitywiz/gwiz-faker/11014e392acd2b1c4f41c5fd901366f54bcddd0e.zip",
-                "reference": "11014e392acd2b1c4f41c5fd901366f54bcddd0e"
+                "url": "https://composer.ongwiz.com/zipball/gravitywiz/gwiz-faker/e04d2c6b283d1991fafe52bf70426a074f98e8a7.zip",
+                "reference": "e04d2c6b283d1991fafe52bf70426a074f98e8a7",
+                "mirrors": [
+                    {
+                        "url": "https://composer.ongwiz.com/zipball/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
-                "fakerphp/faker": "^1.23"
+                "fakerphp/faker": "^1.20.0"
             },
             "type": "library",
             "autoload": {
@@ -176,24 +192,24 @@
                 "GPL-2.0-or-later"
             ],
             "description": "A class for generating fake entry data for Gravity Forms forms. Note, this class does not actually create the entries.",
-            "time": "2024-09-27T20:40:31+00:00"
+            "time": "2024-10-07T16:21:02+00:00"
         },
         {
             "name": "psr/container",
-            "version": "2.0.2",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/container.git",
-                "reference": "c71ecc56dfe541dbd90c5360474fbc405f8d5963"
+                "reference": "2ae37329ee82f91efadc282cc2d527fd6065a5ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/container/zipball/c71ecc56dfe541dbd90c5360474fbc405f8d5963",
-                "reference": "c71ecc56dfe541dbd90c5360474fbc405f8d5963",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/2ae37329ee82f91efadc282cc2d527fd6065a5ef",
+                "reference": "2ae37329ee82f91efadc282cc2d527fd6065a5ef",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.4.0"
+                "php": ">=7.2.0"
             },
             "type": "library",
             "extra": {
@@ -227,31 +243,31 @@
             ],
             "support": {
                 "issues": "https://github.com/php-fig/container/issues",
-                "source": "https://github.com/php-fig/container/tree/2.0.2"
+                "source": "https://github.com/php-fig/container/tree/2.0.1"
             },
-            "time": "2021-11-05T16:47:00+00:00"
+            "time": "2021-03-24T13:40:57+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
-            "version": "v3.5.0",
+            "version": "v2.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/deprecation-contracts.git",
-                "reference": "0e0d29ce1f20deffb4ab1b016a7257c4f1e789a1"
+                "reference": "80d075412b557d41002320b96a096ca65aa2c98d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/0e0d29ce1f20deffb4ab1b016a7257c4f1e789a1",
-                "reference": "0e0d29ce1f20deffb4ab1b016a7257c4f1e789a1",
+                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/80d075412b557d41002320b96a096ca65aa2c98d",
+                "reference": "80d075412b557d41002320b96a096ca65aa2c98d",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1"
+                "php": ">=7.1"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "3.5-dev"
+                    "dev-main": "2.5-dev"
                 },
                 "thanks": {
                     "name": "symfony/contracts",
@@ -280,7 +296,7 @@
             "description": "A generic function and convention to trigger deprecation notices",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/deprecation-contracts/tree/v3.5.0"
+                "source": "https://github.com/symfony/deprecation-contracts/tree/v2.5.3"
             },
             "funding": [
                 {
@@ -296,7 +312,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-04-18T09:32:20+00:00"
+            "time": "2023-01-24T14:02:46+00:00"
         }
     ],
     "packages-dev": [],
@@ -307,5 +323,8 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
+    "platform-overrides": {
+        "php": "7.3"
+    },
     "plugin-api-version": "2.6.0"
 }

@@ -13,6 +13,9 @@
     "config": {
         "allow-plugins": {
             "automattic/jetpack-autoloader": true
+        },
+        "platform": {
+            "php": "7.3"
         }
     }
 }
