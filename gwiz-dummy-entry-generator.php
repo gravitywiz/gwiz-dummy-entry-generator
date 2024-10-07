@@ -4,7 +4,7 @@
  * Plugin URI:   http://gravitywiz.com
  * Description:  A plugin to generate a large number of entries for testing purposes.
  * Author:       Gravity Wiz
- * Version:      1.0-beta-1
+ * Version: 1.0-beta-1.1
  * Author URI:   http://gravitywiz.com
  */
 
