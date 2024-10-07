@@ -4,11 +4,11 @@
  * Plugin URI:   http://gravitywiz.com
  * Description:  A plugin to generate a large number of entries for testing purposes.
  * Author:       Gravity Wiz
- * Version: 1.0-beta-1.1
+ * Version: 1.0-beta-1.2
  * Author URI:   http://gravitywiz.com
  */
 
-define( 'GWIZ_DUMMY_ENTRY_GENERATOR_VERSION', '1.0-beta-1.1' );
+define( 'GWIZ_DUMMY_ENTRY_GENERATOR_VERSION', '1.0-beta-1.2' );
 
 add_action( 'init', function() {
 	if ( ! is_admin() && ! ( defined( 'DOING_AJAX' ) && DOING_AJAX ) ) {
